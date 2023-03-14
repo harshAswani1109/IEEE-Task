@@ -16,12 +16,12 @@ export default function Home() {
         <title>Crypto Task</title>
       </Head>
       <main>
-        <div className="bg-gradient-to-r from-[#F6D1FC] to-[#B9D5FF] h-screen flex justify-between items-center">
+        <div className="bg-gradient-to-r from-[#F6D1FC] to-[#B9D5FF] h-screen flex justify-between items-center max-lg:flex-col max-lg:p-10">
           <div className="flex items-center justify-center gap-2 text-[#404040] text-6xl font-bold w-1/2">
             TaskMate <span className="text-[#9333EA]">UI</span>
           </div>
-          <div className="flex-col justify-center items-center w-1/2 mr-20">
-            <nav className="flex justify-evenly items-center bg-white h-12 text-xl rounded-lg gap-20">
+          <div className="flex-col justify-center items-center w-1/2 mx-20 my-4 max-lg:w-4/5 max-sm:w-full">
+            <nav className="flex justify-evenly items-center bg-white h-12 text-xl rounded-lg gap-4 xl:gap-20">
               <button className="text-[#9333EA] font-bold">TaskMate</button>
               <ul className="flex justify-center items-center gap-8">
                 <button className="text-[#9333EA]">Todo</button>
@@ -38,7 +38,7 @@ export default function Home() {
               </ul>
             </nav>
             <div className="flex mt-6">
-              <div className="flex-col text-xl text-gray-500 w-3/12 h-96 ml-4">
+              <div className="flex-col text-xl text-gray-500 w-3/12 h-96 mx-4">
                 <div className="flex-col h-80 mt-4 ">
                   <div className="text-[#9333EA] gap-2 flex justify-start items-center">
                     <CgCalendarToday />
@@ -58,7 +58,7 @@ export default function Home() {
                   Settings
                 </div>
               </div>
-              <div className="bg-white h-96 w-9/12 rounded-lg"></div>
+              <div className="bg-white h-96 w-9/12 rounded-lg mx-2"></div>
             </div>
           </div>
         </div>
