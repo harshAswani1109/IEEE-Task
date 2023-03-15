@@ -1,13 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../../component/navbar";
-import Footer from "../../component/footer";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { CgCalendarToday } from "react-icons/cg";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { MdOutlineNotificationImportant } from "react-icons/md";
 import { RiSettings3Fill } from "react-icons/ri";
+import TodoPage from "../../component/TodoPage";
 
 export default function Home() {
   return (
@@ -16,8 +15,8 @@ export default function Home() {
         <title>Crypto Task</title>
       </Head>
       <main>
-        <div className="bg-gradient-to-r from-[#F6D1FC] to-[#B9D5FF] h-screen flex justify-between items-center max-lg:flex-col max-lg:p-10">
-          <div className="flex items-center justify-center gap-2 text-[#404040] text-6xl font-bold w-1/2">
+        <div className="bg-gradient-to-r from-[#F6D1FC] to-[#B9D5FF] h-screen flex justify-between items-center max-lg:flex-col">
+          <div className="flex items-center justify-center gap-2 text-[#404040] text-6xl font-bold w-1/2 max-lg:mt-16">
             TaskMate <span className="text-[#9333EA]">UI</span>
           </div>
           <div className="flex-col justify-center items-center w-1/2 mx-20 my-4 max-lg:w-4/5 max-sm:w-full">
@@ -58,7 +57,9 @@ export default function Home() {
                   Settings
                 </div>
               </div>
-              <div className="bg-white h-96 w-9/12 rounded-lg mx-2"></div>
+              <div className="bg-white h-96 w-9/12 rounded-lg mx-2 p-4 items-end justify-start flex ">
+                <TodoPage />
+              </div>
             </div>
           </div>
         </div>
